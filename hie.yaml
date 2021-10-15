@@ -1,0 +1,16 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "multi-lib:lib"
+
+    - path: "./another-src"
+      component: "multi-lib:lib:another-lib"
+
+    - path: "./app/Main.hs"
+      component: "multi-lib:exe:multi-lib-exe"
+
+    - path: "./app/Paths_multi_lib.hs"
+      component: "multi-lib:exe:multi-lib-exe"
+
+    - path: "./test"
+      component: "multi-lib:test:multi-lib-test"
